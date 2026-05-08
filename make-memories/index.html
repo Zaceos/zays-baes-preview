@@ -4,15 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Experience Zay. Hosting, MCing, bachelorette dance experiences, corporate team-building, and events. Zay brings the energy and writes the room." />
-  <!-- TODO: replace Wix CDN hot-links with self-hosted assets before launch -->
   <title>Experience Zay | Events, Hosting, and Brides BAEs | A Day With Zay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800&display=swap" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
 
   <header class="site-header" id="site-header">
     <a href="../index.html" class="site-header__logo" aria-label="A Day With Zay, home">
-      <img src="https://static.wixstatic.com/media/e86afd_77de8b07c1c949b48f29b7938b6f6488~mv2.png/v1/fill/w_540,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ZB%20Logo%20Update%20Final.png" alt="ZB logo, A Day With Zay" />
+      <img src="../assets/zb-logo.png" alt="ZB logo, A Day With Zay" />
     </a>
     <nav class="site-header__nav" aria-label="Primary navigation">
       <a href="../make-moves/index.html">Make Moves</a>
@@ -37,14 +39,16 @@
 
   <main>
 
-    <!-- Hero -->
+    <!-- Hero — real performance photo -->
     <section class="hero hero--compact" aria-label="Experience Zay hero">
-      <div class="hero__bg" style="background-image: url('https://static.wixstatic.com/media/e86afd_c4142281d0d44d6aad292cf1a6831e01~mv2.png/v1/fill/w_696,h_540,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/3%20girls%20%5BRecovered%5D-11.png');" role="presentation" aria-hidden="true"></div>
-      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__bg" style="background-image: url('../assets/instagram/one-night-only-5.jpg');" role="presentation" aria-hidden="true"></div>
+      <div class="hero__overlay" style="background: linear-gradient(160deg, rgba(10,10,10,0.85) 0%, rgba(74,14,120,0.55) 100%);" aria-hidden="true"></div>
       <div class="hero__content">
         <!-- internal taxonomy: Tier 2 -->
+        <span class="hero-eyebrow-script">Make Memories</span>
         <h1 class="hero-h1">Experience Zay</h1>
         <p class="hero__subhead">Hosting, MCing, and event experiences. Zay reads the room. He brings the energy. He fills the space.</p>
+        <em class="script-micro" style="color: rgba(255,255,255,0.75); margin-bottom: 1.5rem; display: block;">Your room. His energy.</em>
         <a href="../contact.html" class="btn btn--primary">Book Zay for Your Event</a>
       </div>
     </section>
@@ -67,8 +71,9 @@
           </div>
           <img
             class="feature-block__img"
-            src="https://static.wixstatic.com/media/e86afd_22c1bd7d88fd44b0a5d504c7a783a98c~mv2.png/v1/fill/w_983,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Isaiah%20Rashaad%20%20Model%20Look%20Book.png"
-            alt="Isaiah Rashaad model look book photo: host, entertainer, and choreographer"
+            src="../assets/zay-portrait.jpg"
+            alt="Isaiah Rashaad portrait: host, entertainer, and choreographer"
+            style="border-radius: 20px;"
           />
         </div>
       </div>
@@ -82,7 +87,7 @@
         <div class="grid-3">
           <article class="card fade-in">
             <img class="card__img"
-              src="https://static.wixstatic.com/media/e86afd_22c1bd7d88fd44b0a5d504c7a783a98c~mv2.png/v1/fill/w_983,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Isaiah%20Rashaad%20%20Model%20Look%20Book.png"
+              src="../assets/zay-portrait.jpg"
               alt="Isaiah Rashaad as host and entertainer: on the mic, in the room" />
             <div class="card__body">
               <span class="badge badge--live">Active</span>
@@ -93,8 +98,8 @@
           </article>
           <article class="card fade-in">
             <img class="card__img"
-              src="https://static.wixstatic.com/media/e86afd_c4142281d0d44d6aad292cf1a6831e01~mv2.png/v1/fill/w_696,h_540,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/3%20girls%20%5BRecovered%5D-11.png"
-              alt="Three women celebrating at a Brides BAEs bachelorette dance experience" />
+              src="../assets/instagram/one-night-only-1.jpg"
+              alt="Seattle Ultimate Heels Experience flyer: Beyonce-inspired event with Zay's BAEs" />
             <div class="card__body">
               <span class="badge badge--live">Live</span>
               <h3 class="card__name">Brides BAEs</h3>
@@ -104,8 +109,8 @@
           </article>
           <article class="card fade-in">
             <img class="card__img"
-              src="https://static.wixstatic.com/media/e86afd_cd6e0d96ca334c4f8a9aceb7475d80e0~mv2.png/v1/fill/w_770,h_583,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/ZB%20Black%20Social%20Media%20Icon%20%5BRecovered%5D-02.png"
-              alt="ZB social media icon representing corporate event experiences with Zay" />
+              src="../assets/instagram/westlake-popup.jpg"
+              alt="Zay's BAEs Westlake pop-up event flyer" />
             <div class="card__body">
               <span class="badge badge--live">Live</span>
               <h3 class="card__name">Corporate Events</h3>

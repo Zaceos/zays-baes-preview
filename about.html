@@ -4,15 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Meet Isaiah Rashaad, known as Zay. Seattle-based choreographer, entertainer, and creative. Founder of Zay's BAEs and Back to BAEsics." />
-  <!-- TODO: replace Wix CDN hot-links with self-hosted assets before launch -->
   <title>About Zay | Isaiah Rashaad | A Day With Zay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header class="site-header" id="site-header">
     <a href="index.html" class="site-header__logo" aria-label="A Day With Zay, home">
-      <img src="https://static.wixstatic.com/media/e86afd_77de8b07c1c949b48f29b7938b6f6488~mv2.png/v1/fill/w_540,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ZB%20Logo%20Update%20Final.png" alt="ZB logo, A Day With Zay" />
+      <img src="assets/zb-logo.png" alt="ZB logo, A Day With Zay" />
     </a>
     <nav class="site-header__nav" aria-label="Primary navigation">
       <a href="make-moves/index.html">Make Moves</a>
@@ -48,8 +50,8 @@
         </div>
         <div class="portrait-hero__img-wrap">
           <img
-            src="https://static.wixstatic.com/media/e86afd_22c1bd7d88fd44b0a5d504c7a783a98c~mv2.png/v1/fill/w_983,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Isaiah%20Rashaad%20%20Model%20Look%20Book.png"
-            alt="Isaiah Rashaad, model look book photo: choreographer and founder of A Day With Zay"
+            src="assets/zay-portrait.jpg"
+            alt="Isaiah Rashaad, portrait: choreographer and founder of A Day With Zay"
           />
         </div>
       </div>
@@ -76,11 +78,27 @@
       </div>
     </section>
 
+    <!-- Letter from the Choreographer block -->
+    <section class="section section--cream" aria-label="Letter from Zay">
+      <div class="container">
+        <div class="letter-block fade-in" style="max-width: 760px; margin: 0 auto;">
+          <span class="letter-block__eyebrow">Hey Hey There, Bae</span>
+          <p class="letter-block__text">
+            I built this because I believe confidence transforms people. Not just in heels. Not just on a stage. In their whole lives. When someone walks into my class scared to move and walks out doing something they swore they never could, that is the whole point.
+          </p>
+          <p class="letter-block__text" style="margin-top: 1rem;">
+            I want every class, every event, every collab to carry that energy. You belong in the room. Whatever door you came through.
+          </p>
+          <span class="letter-block__attr">Isaiah Rashaad, Founder, A Day With Zay</span>
+        </div>
+      </div>
+    </section>
+
     <!-- Pull quote -->
     <section class="section section--gradient" aria-label="Brand quote">
       <div class="container">
         <div class="pull-quote fade-in">
-          <p class="pull-quote__text">"Always leave your heart in your art."</p>
+          <p class="pull-quote__text pull-quote__text--script">"Always leave your heart in your art."</p>
           <p class="pull-quote__attr" style="color: rgba(255,255,255,0.7);">Isaiah Rashaad, Founder, A Day With Zay</p>
           <p class="pull-quote__attr" style="color: rgba(255,255,255,0.55); margin-top: 0.75rem; font-size: 1.0625rem;">An attitude of gratitude.</p>
         </div>
@@ -115,46 +133,46 @@
         <h2 class="section-h2 text-center fade-in" style="margin-bottom: 3rem;">How Can Zay Show Up for You?</h2>
         <div class="grid-4">
           <a href="make-moves/index.html" class="card" style="text-decoration: none;">
-            <img class="card__img card__img--logo"
-              src="https://static.wixstatic.com/media/e86afd_77de8b07c1c949b48f29b7938b6f6488~mv2.png/v1/fill/w_540,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ZB%20Logo%20Update%20Final.png"
-              alt="ZB logo representing Zay's BAEs training programs" />
+            <img class="card__img"
+              src="assets/instagram/btb-spring-1.jpg"
+              alt="Back to BAEsics heels series flyer: cursive script with heels close-up, May 2026" />
             <div class="card__body">
               <!-- internal taxonomy: Make Moves -->
-              <h3 class="card__name">Make Moves</h3>
+              <h3 class="card__name gradient-text">Make Moves</h3>
               <p class="card__hook">Classes, series, and programs built around confidence-first heels and jazz funk movement.</p>
               <span class="btn btn--primary btn--sm">Explore Training</span>
             </div>
           </a>
           <a href="make-memories/index.html" class="card" style="text-decoration: none;">
             <img class="card__img"
-              src="https://static.wixstatic.com/media/e86afd_c4142281d0d44d6aad292cf1a6831e01~mv2.png/v1/fill/w_696,h_540,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/3%20girls%20%5BRecovered%5D-11.png"
-              alt="Brides BAEs bachelorette dance experience with three women celebrating" />
+              src="assets/instagram/one-night-only-5.jpg"
+              alt="The BAEs performing on stage in cowboy hats at a live show" />
             <div class="card__body">
               <!-- internal taxonomy: Make Memories -->
-              <h3 class="card__name">Make Memories</h3>
+              <h3 class="card__name gradient-text">Make Memories</h3>
               <p class="card__hook">Host your bachelorette, corporate event, or milestone celebration with Zay at the center.</p>
               <span class="btn btn--secondary btn--sm">Explore Experiences</span>
             </div>
           </a>
           <a href="make-statements/index.html" class="card" style="text-decoration: none;">
             <img class="card__img"
-              src="https://static.wixstatic.com/media/e86afd_cd6e0d96ca334c4f8a9aceb7475d80e0~mv2.png/v1/fill/w_770,h_583,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/ZB%20Black%20Social%20Media%20Icon%20%5BRecovered%5D-02.png"
-              alt="ZB Black Social Media Icon, A Day With Zay brand asset" />
+              src="assets/instagram/saturzays.jpg"
+              alt="Jazz Funk SaturZays class flyer by Zay's BAEs" />
             <div class="card__body">
               <!-- internal taxonomy: Make Statements -->
-              <h3 class="card__name">Make Statements</h3>
+              <h3 class="card__name" style="background: linear-gradient(135deg, var(--c-accent-purple), var(--c-accent-pink)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">Make Statements</h3>
               <p class="card__hook">Brand collaborations, content, merch, and partnerships built to fit the audience he has built.</p>
               <span class="btn btn--secondary btn--sm">Explore Partnerships</span>
             </div>
           </a>
           <a href="zays-baes/index.html" class="card" style="text-decoration: none; border-top: 3px solid var(--c-accent-teal);">
-            <img class="card__img card__img--logo"
-              src="https://static.wixstatic.com/media/e86afd_77de8b07c1c949b48f29b7938b6f6488~mv2.png/v1/fill/w_540,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ZB%20Logo%20Update%20Final.png"
-              alt="ZB logo representing Zay's BAEs troupe and certification pathway" />
+            <img class="card__img"
+              src="assets/instagram/one-night-only-5.jpg"
+              alt="Zay's BAEs troupe performing live on stage in cowboy hats" />
             <div class="card__body">
               <!-- internal taxonomy: Zay's BAEs -->
-              <span class="eyebrow" style="color: var(--c-accent-teal); margin-bottom: 0.25rem; font-size: 0.65rem;">BECOME A BAE</span>
-              <h3 class="card__name">Zay's BAEs</h3>
+              <span class="script-micro" style="color: var(--c-accent-teal);">Become a BAE</span>
+              <h3 class="card__name" style="background: linear-gradient(135deg, var(--c-accent-teal), var(--c-accent-pink)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">Zay's BAEs</h3>
               <p class="card__hook">The performers who back Zay at events. The certified instructors who carry the brand to new cities.</p>
               <span class="btn btn--sm" style="background-color: var(--c-accent-teal); color: white; border: 2px solid var(--c-accent-teal);">Learn More</span>
             </div>

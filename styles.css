@@ -1,8 +1,7 @@
 /* ============================================================
    A Day With Zay — Shared Stylesheet v2
    Brand: Isaiah Rashaad / Zay's BAEs / adaywithzay.com
-   ============================================================
-   <!-- TODO: replace Wix CDN hot-links with self-hosted assets before launch -->
+   Visual refresh: Caveat Brush script font, IG imagery, femme-coded layout
    ============================================================ */
 
 /* ------------------------------------------------------------
@@ -25,8 +24,9 @@
   --c-border: rgba(255, 255, 255, 0.12);
 
   --font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-script: 'Caveat Brush', 'Brush Script MT', cursive;
   --max-w: 1200px;
-  --radius: 12px;
+  --radius: 20px;
   --transition: 200ms ease;
 
   --section-pad-v: clamp(4rem, 8vw, 7rem);
@@ -1549,4 +1549,287 @@ p {
   .calendar-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* ------------------------------------------------------------
+   21. Script (Caveat Brush) Accent Elements
+   ------------------------------------------------------------ */
+
+/* Hero eyebrow in script */
+.hero-eyebrow-script {
+  font-family: var(--font-script);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--c-accent-pink);
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+/* Script accent used on section subtitles / taglines */
+.script-accent {
+  font-family: var(--font-script);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: var(--c-accent-pink);
+  display: block;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/* Script on pull quotes */
+.pull-quote__text--script {
+  font-family: var(--font-script);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Micro-copy in script (taglines under card eyebrows) */
+.script-micro {
+  font-family: var(--font-script);
+  font-size: 1.125rem;
+  color: var(--c-accent-pink);
+  display: block;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+/* ------------------------------------------------------------
+   22. Gradient Text on Domain Names
+   ------------------------------------------------------------ */
+.gradient-text {
+  background: linear-gradient(135deg, var(--c-accent-pink), var(--c-accent-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ------------------------------------------------------------
+   23. Section H2 Pink Underline Accent
+   ------------------------------------------------------------ */
+.section-h2--accented {
+  position: relative;
+  display: inline-block;
+}
+
+.section-h2--accented::after {
+  content: '';
+  position: absolute;
+  bottom: -0.375rem;
+  left: 0;
+  width: 2.5rem;
+  height: 3px;
+  background: linear-gradient(90deg, var(--c-accent-pink), var(--c-accent-purple));
+  border-radius: 2px;
+}
+
+.text-center .section-h2--accented::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ------------------------------------------------------------
+   24. Femme-Coded Card + Shadow Upgrades
+   ------------------------------------------------------------ */
+.card {
+  border-radius: var(--radius); /* now 20px from token */
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(255, 27, 107, 0.12);
+}
+
+.card--dark:hover {
+  box-shadow: 0 8px 32px rgba(255, 27, 107, 0.15);
+}
+
+.doorway-card {
+  border-radius: var(--radius);
+}
+
+/* ------------------------------------------------------------
+   25. Numbered Editorial Cards (Aisha-style)
+   ------------------------------------------------------------ */
+.numbered-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--c-bg-light);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
+  position: relative;
+}
+
+.numbered-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(255, 27, 107, 0.12);
+}
+
+.numbered-card__num {
+  font-family: var(--font-script);
+  font-size: clamp(3rem, 7vw, 5rem);
+  color: var(--c-accent-pink);
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.numbered-card__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 4px);
+  margin-bottom: 0.5rem;
+}
+
+.numbered-card__name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--c-text-dark);
+}
+
+.numbered-card__desc {
+  font-size: 0.9375rem;
+  color: var(--c-text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Dark variant */
+.numbered-card--dark {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--c-border);
+}
+
+.numbered-card--dark .numbered-card__name {
+  color: var(--c-text-light);
+}
+
+.numbered-card--dark .numbered-card__desc {
+  color: var(--c-text-muted-dark);
+}
+
+.numbered-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .numbered-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .numbered-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ------------------------------------------------------------
+   26. Dark Section Gradient Enhancement
+   ------------------------------------------------------------ */
+.section--dark-gradient {
+  background: linear-gradient(180deg, var(--c-bg-dark) 0%, rgba(74, 14, 120, 0.4) 100%);
+  color: var(--c-text-light);
+}
+
+/* ------------------------------------------------------------
+   27. Full-bleed Image Band (for callout sections using IG photos)
+   ------------------------------------------------------------ */
+.image-band {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-band__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.image-band__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.78) 0%,
+    rgba(74, 14, 120, 0.60) 100%
+  );
+  z-index: 1;
+}
+
+.image-band__content {
+  position: relative;
+  z-index: 2;
+  padding-top: var(--section-pad-v);
+  padding-bottom: var(--section-pad-v);
+}
+
+/* ------------------------------------------------------------
+   28. Letter from the Choreographer pullquote block
+   ------------------------------------------------------------ */
+.letter-block {
+  background: linear-gradient(135deg, rgba(233, 30, 140, 0.08) 0%, rgba(107, 31, 176, 0.08) 100%);
+  border-left: 4px solid var(--c-accent-pink);
+  border-radius: var(--radius);
+  padding: 2.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.letter-block::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  font-family: var(--font-script);
+  font-size: 6rem;
+  color: var(--c-accent-pink);
+  opacity: 0.15;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.letter-block__eyebrow {
+  font-family: var(--font-script);
+  font-size: 1.5rem;
+  color: var(--c-accent-pink);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.letter-block__text {
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.75;
+  color: var(--c-text-dark);
+  margin-bottom: 1.25rem;
+}
+
+.letter-block__attr {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-accent-purple);
+}
+
+/* ------------------------------------------------------------
+   29. Eyebrow letter-spacing refinement
+   ------------------------------------------------------------ */
+.eyebrow {
+  letter-spacing: 0.18em;
 }
