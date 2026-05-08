@@ -586,17 +586,20 @@ p {
 
 .doorway-card {
   position: relative;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--c-border);
+  background: linear-gradient(160deg, rgba(15, 10, 25, 0.96), rgba(30, 12, 45, 0.94));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius);
   padding: 2.5rem 2rem;
   text-align: center;
-  transition: background-color var(--transition), border-color var(--transition), transform var(--transition);
+  transition: background var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
 }
 
 .doorway-card::before {
@@ -612,9 +615,10 @@ p {
 }
 
 .doorway-card:hover {
-  background-color: rgba(255, 255, 255, 0.10);
-  border-color: rgba(255, 27, 107, 0.4);
+  background: linear-gradient(160deg, rgba(25, 15, 40, 0.98), rgba(45, 18, 65, 0.96));
+  border-color: rgba(255, 27, 107, 0.5);
   transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(255, 27, 107, 0.18);
 }
 
 .doorway-card:hover::before {
