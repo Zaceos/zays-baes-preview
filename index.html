@@ -54,6 +54,7 @@
         <h1 class="hero-h1">How Would You Like<br>To Spend A Day With Zay?</h1>
         <p class="hero__subhead"><em class="script-micro">Confidence first. Always. Every body. Every level.</em> Make Moves with Zay, Make Memories in your room, Make Statements with the brand, or Become a BAE. Choose your door.</p>
 
+        <p class="hero__subhead" style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin: 2rem 0 1rem; font-style: normal;">Choose Your Experience</p>
         <div class="hero__doorways hero__doorways--4col">
           <a href="make-moves/index.html" class="doorway-card">
             <span class="script-micro">Dance With Zay</span>
@@ -65,21 +66,18 @@
             <span class="script-micro">Book Zay</span>
             <h3 class="gradient-text">Make Memories</h3>
             <p>Host your event, bachelorette, or corporate offsite with Zay at the helm.</p>
-            <em style="font-family: var(--font-script); font-size: 0.95rem; color: rgba(255,255,255,0.6); font-style: normal;">Your room. His energy.</em>
             <span class="btn btn--ghost btn--sm">Open the door &rarr;</span>
           </a>
           <a href="make-statements/index.html" class="doorway-card">
             <span class="script-micro">Partner With Zay</span>
             <h3 class="gradient-text">Make Statements</h3>
             <p>Brand collaborations, content, and partnerships that fit Zay's audience.</p>
-            <em style="font-family: var(--font-script); font-size: 0.95rem; color: rgba(255,255,255,0.6); font-style: normal;">Brands that fit. Audiences that show up.</em>
             <span class="btn btn--ghost btn--sm">Open the door &rarr;</span>
           </a>
           <a href="zays-baes/index.html" class="doorway-card doorway-card--teal">
             <span class="script-micro" style="color: var(--c-accent-teal);">Become a BAE</span>
             <h3 style="background: linear-gradient(135deg, var(--c-accent-teal), var(--c-accent-pink)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">Zay's BAEs</h3>
             <p>The team Zay performs with. The certified instructors who carry the brand.</p>
-            <em style="font-family: var(--font-script); font-size: 0.95rem; color: rgba(255,255,255,0.6); font-style: normal;">Become one of his.</em>
             <span class="btn btn--ghost btn--sm">Open the door &rarr;</span>
           </a>
         </div>
@@ -87,19 +85,16 @@
     </section>
 
     <!-- ============================================================
-         SECTION 2: "ARE YOU READY TO HIT THE STAGE?" — real performance photo background
+         SECTION 2: Video Placeholder (replaces Signature Series)
          ============================================================ -->
-    <section class="image-band" aria-label="Back to BAEsics callout">
-      <div class="image-band__bg" style="background-image: url('assets/instagram/one-night-only-5.jpg');" role="presentation" aria-hidden="true"></div>
-      <div class="image-band__overlay" aria-hidden="true"></div>
-      <div class="image-band__content container text-center">
-        <span class="hero-eyebrow-script fade-in" style="color: rgba(255,255,255,0.9);">Signature Series</span>
-        <h2 class="section-h2 fade-in" style="color: var(--c-text-light);">ARE YOU READY TO HIT THE STAGE?</h2>
-        <p class="fade-in" style="max-width: 640px; margin: 1.5rem auto; color: rgba(255,255,255,0.85); font-size: 1.125rem;">
-          Six weeks. Confidence over technique. Sold-out cohorts. You walk in shy. You walk out rolling on the floor, hair flipping, and throwing the thing. Welcome to Back to BAEsics.
-        </p>
-        <em class="script-accent fade-in" style="color: rgba(255,255,255,0.75); margin-bottom: 2rem; display: block;">Where shy goes to die.</em>
-        <a href="make-moves/back-to-baesics.html" class="btn btn--ghost fade-in">Join the Next Cohort</a>
+    <section class="section section--dark" aria-label="Zay in action">
+      <div class="container">
+        <span class="eyebrow text-center" style="display: block; color: var(--c-accent-pink);">A Day With Zay</span>
+        <h2 class="section-h2 text-center fade-in" style="color: var(--c-text-light); margin-bottom: 2rem;">See the Room</h2>
+        <!-- VIDEO PLACEHOLDER — Zay to provide 15-sec compilation of teaching, performing, training across all four domains -->
+        <div class="video-placeholder fade-in" role="img" aria-label="Video placeholder: Zay teaching, performing, and training across all four domains">
+          <p class="video-placeholder__caption">VIDEO PLACEHOLDER — Zay to provide 15-sec looping compilation of teaching, performing, and training across all four domains.</p>
+        </div>
       </div>
     </section>
 
@@ -116,9 +111,9 @@
 
         <div class="calendar-grid fade-in">
 
-          <!-- Card 1: Back to BAEsics Pt. I, Spring Cohort -->
-          <article class="event-card">
-            <div class="event-card__date">
+          <!-- Card 1: Back to BAEsics Pt. I, Spring Cohort — Make Moves (hot pink) -->
+          <article class="event-card" data-domain="make-moves">
+            <div class="event-card__date domain-color--make-moves">
               <span class="event-card__day">SAT</span>
               <span class="event-card__month">May 16</span>
               <span class="event-card__year">2026</span>
@@ -141,9 +136,9 @@
             </div>
           </article>
 
-          <!-- Card 2: Beginner Jazz Funk — Drop-In -->
-          <article class="event-card">
-            <div class="event-card__date">
+          <!-- Card 2: Beginner Jazz Funk — Drop-In — Make Moves (hot pink) -->
+          <article class="event-card" data-domain="make-moves">
+            <div class="event-card__date domain-color--make-moves">
               <span class="event-card__day">THU</span>
               <span class="event-card__month">Weekly</span>
               <span class="event-card__year">Drop-In</span>
@@ -166,9 +161,9 @@
             </div>
           </article>
 
-          <!-- Card 3: Back to BAEsics Pt. II -->
-          <article class="event-card">
-            <div class="event-card__date">
+          <!-- Card 3: Back to BAEsics Pt. II — Make Moves (hot pink) -->
+          <article class="event-card" data-domain="make-moves">
+            <div class="event-card__date domain-color--make-moves">
               <span class="event-card__day">SAT</span>
               <span class="event-card__month">Late June</span>
               <span class="event-card__year">2026</span>
@@ -191,9 +186,9 @@
             </div>
           </article>
 
-          <!-- Card 4: Back to BAEsics, Tacoma Run -->
-          <article class="event-card">
-            <div class="event-card__date">
+          <!-- Card 4: Back to BAEsics, Tacoma Run — Make Moves (hot pink) -->
+          <article class="event-card" data-domain="make-moves">
+            <div class="event-card__date domain-color--make-moves">
               <span class="event-card__day">TBD</span>
               <span class="event-card__month">Tacoma</span>
               <span class="event-card__year">2026</span>
@@ -216,9 +211,9 @@
             </div>
           </article>
 
-          <!-- Card 5: Brides BAEs — By Appointment -->
-          <article class="event-card">
-            <div class="event-card__date">
+          <!-- Card 5: Brides BAEs — Make Memories (hot purple) -->
+          <article class="event-card" data-domain="make-memories">
+            <div class="event-card__date domain-color--make-memories">
               <span class="event-card__day">BY</span>
               <span class="event-card__month">Appt.</span>
               <span class="event-card__year">Custom</span>
@@ -241,9 +236,9 @@
             </div>
           </article>
 
-          <!-- Card 6: Workshop Pop-Up — TBD -->
-          <article class="event-card">
-            <div class="event-card__date">
+          <!-- Card 6: Workshop Pop-Up — Make Moves (hot pink) -->
+          <article class="event-card" data-domain="make-moves">
+            <div class="event-card__date domain-color--make-moves">
               <span class="event-card__day">POP</span>
               <span class="event-card__month">Up</span>
               <span class="event-card__year">Watch IG</span>
@@ -310,52 +305,29 @@
     </section>
 
     <!-- ============================================================
-         SECTION 4: Featured Programs
+         SECTION 4: Testimonials (replaces Featured Programs)
          ============================================================ -->
-    <section class="section section--cream" aria-label="Featured programs">
+    <!-- TESTIMONIALS PLACEHOLDER — Zay to provide 3-5 student/client testimonials -->
+    <section class="section section--cream" aria-label="Student and client testimonials">
       <div class="container">
-        <span class="eyebrow text-center" style="text-align: center; display: block;">Featured Programs</span>
-        <h2 class="section-h2 text-center section-h2--accented fade-in" style="margin-bottom: 3rem;">Built for You. Built to Last.</h2>
-        <div class="grid-3">
-          <article class="card fade-in">
-            <img
-              class="card__img"
-              src="assets/instagram/btb-spring-1.jpg"
-              alt="Back to BAEsics heels series flyer: close-up of heels with cursive BAEsics script lettering, May 2026 cohort"
-            />
-            <div class="card__body">
-              <span class="badge badge--live">Live</span>
-              <h3 class="card__name">Back to BAEsics</h3>
-              <p class="card__hook">The 6-week beginner heels series that sells out every cohort. Confidence before technique, every time.</p>
-              <em class="script-micro">Where shy goes to die.</em>
-              <a href="make-moves/back-to-baesics.html" class="btn btn--primary btn--sm">Learn More</a>
-            </div>
+        <span class="eyebrow text-center" style="text-align: center; display: block;">What They Say</span>
+        <h2 class="section-h2 text-center section-h2--accented fade-in" style="margin-bottom: 3rem;">The Room Speaks for Itself</h2>
+        <!-- TESTIMONIALS PLACEHOLDER — Zay to provide 3-5 student/client quotes with name and service taken -->
+        <div class="testimonials-grid">
+          <article class="testimonial-card fade-in">
+            <p class="testimonial-card__quote">[Quote pending]</p>
+            <p class="testimonial-card__name">[Student/client name]</p>
+            <p class="testimonial-card__service">[Service taken]</p>
           </article>
-          <article class="card fade-in">
-            <img
-              class="card__img"
-              src="assets/instagram/extended-training.jpg"
-              alt="ZB Heels Extended Training program flyer with Zay"
-            />
-            <div class="card__body">
-              <span class="badge badge--coming-back">Coming Back</span>
-              <h3 class="card__name">ZB Performance Training Co.</h3>
-              <p class="card__hook">Industry prep for dancers ready to hit the stage and the screen. Headshots, reels, agent advice.</p>
-              <a href="make-moves/zb-performance-training.html" class="btn btn--secondary btn--sm">Learn More</a>
-            </div>
+          <article class="testimonial-card fade-in">
+            <p class="testimonial-card__quote">[Quote pending]</p>
+            <p class="testimonial-card__name">[Student/client name]</p>
+            <p class="testimonial-card__service">[Service taken]</p>
           </article>
-          <article class="card fade-in">
-            <img
-              class="card__img"
-              src="assets/instagram/tacoma-baes-3.jpg"
-              alt="Letter from the Choreographer Tacoma Back to BAEsics flyer with teal-pink gradient"
-            />
-            <div class="card__body">
-              <span class="badge badge--live">Live</span>
-              <h3 class="card__name">Brides BAEs</h3>
-              <p class="card__hook">Choreographed bachelorette parties, wedding first dances, and reception performances. Your celebration, elevated.</p>
-              <a href="make-memories/brides-baes.html" class="btn btn--secondary btn--sm">Learn More</a>
-            </div>
+          <article class="testimonial-card fade-in">
+            <p class="testimonial-card__quote">[Quote pending]</p>
+            <p class="testimonial-card__name">[Student/client name]</p>
+            <p class="testimonial-card__service">[Service taken]</p>
           </article>
         </div>
       </div>
@@ -382,7 +354,7 @@
     <section class="section" aria-label="Four paths with Zay">
       <div class="container">
         <h2 class="section-h2 text-center fade-in" style="margin-bottom: 0.75rem;">How Would You Like to Spend a Day With Zay?</h2>
-        <p class="text-center text-muted fade-in" style="margin-bottom: 3rem;">Four doors. Pick yours.</p>
+        <p class="text-center text-muted fade-in" style="margin-bottom: 3rem;">Choose your experience. Four doors. Pick yours.</p>
         <div class="grid-4">
           <a href="make-moves/index.html" class="card" style="text-decoration: none;">
             <img
