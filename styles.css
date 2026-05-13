@@ -1842,20 +1842,22 @@ p {
 
 /* ------------------------------------------------------------
    30. Domain color utility classes (for calendar event cards)
+   Use .event-card__date compound selector to guarantee specificity
+   wins over the base .event-card__date background rule.
    ------------------------------------------------------------ */
-.domain-color--make-moves {
+.event-card__date.domain-color--make-moves {
   background: linear-gradient(135deg, var(--c-accent-pink), var(--c-accent-pink-deep));
 }
 
-.domain-color--make-memories {
+.event-card__date.domain-color--make-memories {
   background: linear-gradient(135deg, var(--c-accent-purple), var(--c-accent-purple-deep));
 }
 
-.domain-color--make-statements {
+.event-card__date.domain-color--make-statements {
   background: linear-gradient(135deg, var(--c-accent-blue), #4a90d9);
 }
 
-.domain-color--zays-baes {
+.event-card__date.domain-color--zays-baes {
   background: linear-gradient(135deg, var(--c-accent-green), #16a34a);
 }
 
