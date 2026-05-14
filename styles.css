@@ -2020,6 +2020,44 @@ p {
   padding: 0.5rem;
 }
 
+/* Brand-logo variant: holds an inline brand logo (SVG / PNG) instead of text.
+   Replace the Simple Icons CDN sources with brand-approved press-kit logos
+   before any major launch. */
+.logo-strip__item--brand {
+  width: 150px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  filter: grayscale(20%);
+  opacity: 0.82;
+  transition: opacity var(--transition), filter var(--transition);
+}
+
+.logo-strip__item--brand:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.logo-strip__item--brand img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Text-only wordmark variant for brands not available as a logo file. */
+.logo-strip__item--wordmark {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--c-text-dark);
+  background-color: transparent;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: "Segoe UI", "Inter", system-ui, sans-serif;
+}
+
 .media-strip__item {
   padding: 0.625rem 1.25rem;
   border: 1.5px solid rgba(0, 0, 0, 0.12);

@@ -71,12 +71,20 @@
         <span class="eyebrow text-center" style="display: block;">Social Proof</span>
         <h2 class="section-h2 text-center fade-in" style="margin-bottom: 0.75rem;">Brands He Has Represented</h2>
         <p class="text-center text-muted fade-in" style="margin-bottom: 2.5rem;">Brands and partners Zay has worked with. More on request.</p>
-        <!-- Brand names rendered as wordmark chips. Replace .logo-strip__item content with actual SVG logos once Zay supplies brand-approved versions. -->
+        <!-- Brand logos. TODO: replace Simple Icons CDN sources with brand-approved
+             press-kit logos before any major launch. Microsoft uses a wordmark
+             because Simple Icons no longer hosts the Microsoft logo. -->
         <div class="logo-strip fade-in">
-          <div class="logo-strip__item">Nike</div>
-          <div class="logo-strip__item">Adidas</div>
-          <div class="logo-strip__item">Microsoft</div>
-          <div class="logo-strip__item">Ubisoft Just Dance</div>
+          <div class="logo-strip__item logo-strip__item--brand">
+            <img src="../assets/brand-logos/nike.svg" alt="Nike" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.simpleicons.org/nike/0F0F0F';" />
+          </div>
+          <div class="logo-strip__item logo-strip__item--brand">
+            <img src="../assets/brand-logos/adidas.svg" alt="Adidas" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.simpleicons.org/adidas/0F0F0F';" />
+          </div>
+          <div class="logo-strip__item logo-strip__item--wordmark" aria-label="Microsoft">Microsoft</div>
+          <div class="logo-strip__item logo-strip__item--brand">
+            <img src="../assets/brand-logos/ubisoft.svg" alt="Ubisoft Just Dance" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.simpleicons.org/ubisoft/0F0F0F';" />
+          </div>
         </div>
       </div>
     </section>
