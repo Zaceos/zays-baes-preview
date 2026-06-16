@@ -9,12 +9,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800&display=swap" />
   <link rel="stylesheet" href="../styles.css" />
+  <style>
+    @font-face {
+      font-family: 'Smooth Fantasy';
+      src: url('../assets/drive/fonts/SmoothFantasy.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
 </head>
 <body>
 
   <header class="site-header" id="site-header">
     <a href="../index.html" class="site-header__logo" aria-label="A Day With Zay, home">
-      <img src="../assets/brand/a-day-with-zay-wordmark.png" alt="A Day With Zay" />
+      <img src="../assets/drive/img/logo_transparent.png" alt="A Day With Zay" />
     </a>
     <nav class="site-header__nav" aria-label="Primary navigation">
       <a href="index.html" class="active">Make Moves</a>
@@ -101,7 +110,23 @@
       </div>
     </section>
 
-    <!-- Loving The Lens — camera training sub-offering -->
+    <!-- ZB5 Program Showcase Reel -->
+    <section class="section section--dark" aria-label="ZB Performance Training Co. program showcase reel">
+      <div class="container text-center">
+        <span class="eyebrow" style="color: var(--c-accent-pink);">The Program In Action</span>
+        <h2 class="section-h2 fade-in" style="color: var(--c-text-light);">ZB Performance Training Co.</h2>
+        <p class="fade-in" style="color: var(--c-text-muted-dark); max-width: 640px; margin: 0 auto 1rem;">ZB5 season highlight reel. The dancers who came through the program, the stage time they earned, and the level they reached.</p>
+        <video controls preload="metadata" playsinline
+               poster="../assets/drive/img/showcase_still.jpg"
+               aria-label="ZB Performance Training Co. ZB5 season highlight reel"
+               style="width:100%; max-width:900px; margin:2rem auto 0; border-radius:20px; display:block;">
+          <source src="../assets/drive/video/reel-zb5.mp4" type="video/mp4" />
+          Your browser does not support video playback.
+        </video>
+      </div>
+    </section>
+
+    <!-- Loving The Lens - camera training sub-offering -->
     <section class="section" aria-label="Loving The Lens camera training">
       <div class="container">
         <div class="feature-block feature-block--reverse fade-in">
@@ -209,13 +234,13 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div class="site-footer__brand">
-        <h3>A Day With Zay</h3>
+        <img src="../assets/drive/img/logo_black_bg.png" alt="A Day With Zay" class="site-footer__logo-img" />
         <p>Choreographer | Entertainer | Creative</p>
         <p class="site-footer__values">Always leave your heart in your art.</p>
         <div class="site-footer__social">
-          <a href="https://www.instagram.com/adwzofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          <a href="https://www.instagram.com/isaiahrashaad" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
           <a href="https://www.tiktok.com/@adaywithzay1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TT</a>
-          <a href="https://www.youtube.com/ADWZOfficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+          <a href="https://www.youtube.com/isaiahrashaad1" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
           <a href="https://www.facebook.com/adwzofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
           <a href="https://twitter.com/ADayWithZay_" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">X</a>
         </div>
