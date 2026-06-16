@@ -1,13 +1,16 @@
 /* ============================================================
    A Day With Zay — Shared Stylesheet v2
    Brand: Isaiah Rashaad / Zay's BAEs / adaywithzay.com
-   Visual refresh: Smooth Fantasy + Caveat Brush script fonts, real brand assets
+   Visual refresh: Caveat Brush script font, real brand assets
    ============================================================ */
 
 /* ------------------------------------------------------------
-   0a. Custom Fonts (Smooth Fantasy — ZB brand display font)
+   0a. Custom Fonts (Smooth Fantasy — REMOVED: watermarked personal-use-only TTF, IP violation)
    ------------------------------------------------------------ */
-/* Root-relative path from styles.css at site root */
+/* Smooth Fantasy @font-face removed — file has a "Din Studio / PERSONAL USE ONLY"
+   watermark baked into the glyphs. Do not re-add without a commercial license.
+   TTF file kept on disk for reference but is NOT loaded. */
+/*
 @font-face {
   font-family: 'Smooth Fantasy';
   src: url('assets/drive/fonts/SmoothFantasy.ttf') format('truetype');
@@ -15,9 +18,9 @@
   font-style: normal;
   font-display: swap;
 }
+*/
 
-/* Subdirectory pages use the same file — added via per-page @font-face block
-   in <style> tags pointing to ../assets/drive/fonts/SmoothFantasy.ttf */
+/* Subdirectory pages previously had per-page @font-face blocks — all removed. */
 
 /* ------------------------------------------------------------
    0. CSS Custom Properties (Design Tokens)
@@ -54,10 +57,8 @@
   --c-cosmic-teal-dark: #16475A;
 
   --font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-  /* Smooth Fantasy is ZB's real brand display font. Used for large hero display
-     and brand accent moments. Caveat Brush remains as the fallback for small/
-     micro uses where Smooth Fantasy renders too heavy. */
-  --font-script: 'Smooth Fantasy', 'Caveat Brush', 'Brush Script MT', cursive;
+  /* Caveat Brush is the script font. Loaded via Google Fonts on every page. */
+  --font-script: 'Caveat Brush', 'Brush Script MT', cursive;
   --font-script-small: 'Caveat Brush', 'Brush Script MT', cursive;
   --max-w: 1200px;
   --radius: 20px;
@@ -2202,6 +2203,13 @@ p {
   content: '';
 }
 
+/* On light/cream backgrounds the default white text is invisible.
+   Scope: any .artist-credits that is NOT inside a dark-section. */
+.section--cream .artist-credits__name,
+.section:not(.section--dark):not(.section--gradient) .artist-credits__name {
+  color: var(--c-text-dark);
+}
+
 /* ------------------------------------------------------------
    37. Credibility Strip (slim brand logos + artist names below hero)
    ------------------------------------------------------------ */
@@ -2257,6 +2265,20 @@ p {
   padding: 0.2rem 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Brand chip: text pill used sitewide for brand lists (replaces CDN logo images) */
+.brand-chip {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--c-text-dark);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  padding: 0.35rem 0.875rem;
   white-space: nowrap;
 }
 
