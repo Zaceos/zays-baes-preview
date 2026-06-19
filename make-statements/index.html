@@ -73,19 +73,19 @@
         <h2 class="section-h2 text-center fade-in" style="margin-bottom: 0.5rem;">Brands I've Worked With</h2>
         <p class="text-center text-muted fade-in" style="margin-bottom: 2rem; font-size: 0.9rem;">Commercial dance talent, brand campaigns, and on-camera representation. 17 brands and counting.</p>
         <div class="brand-chips fade-in" style="display: flex; flex-wrap: wrap; gap: 0.625rem; justify-content: center; margin-bottom: 1.25rem;">
-          <span class="brand-chip">Nike</span>
-          <span class="brand-chip">Adidas</span>
+          <img class="brand-logo" src="../assets/logos/nike.svg" alt="Nike" loading="lazy" />
+          <img class="brand-logo" src="../assets/logos/adidas.svg" alt="Adidas" loading="lazy" />
           <span class="brand-chip">Asics</span>
           <span class="brand-chip">Levi's</span>
-          <span class="brand-chip">Chevrolet</span>
-          <span class="brand-chip">Volkswagen</span>
-          <span class="brand-chip">Porsche</span>
-          <span class="brand-chip">Ubisoft Just Dance</span>
+          <img class="brand-logo" src="../assets/logos/chevrolet.svg" alt="Chevrolet" loading="lazy" />
+          <img class="brand-logo" src="../assets/logos/volkswagen.svg" alt="Volkswagen" loading="lazy" />
+          <img class="brand-logo" src="../assets/logos/porsche.svg" alt="Porsche" loading="lazy" />
+          <img class="brand-logo" src="../assets/logos/ubisoft.svg" alt="Ubisoft Just Dance" loading="lazy" />
           <span class="brand-chip">Chanel</span>
-          <span class="brand-chip">Huawei</span>
+          <img class="brand-logo" src="../assets/logos/huawei.svg" alt="Huawei" loading="lazy" />
           <span class="brand-chip">BECU</span>
           <span class="brand-chip">Nature Made</span>
-          <span class="brand-chip">Skoda</span>
+          <img class="brand-logo" src="../assets/logos/skoda.svg" alt="Skoda" loading="lazy" />
           <span class="brand-chip">Ed Hardy</span>
           <span class="brand-chip">Regal Chivas</span>
           <span class="brand-chip">TMall</span>
@@ -97,10 +97,14 @@
     <!-- Artists I've Worked With -->
     <section class="section section--dark" aria-label="Artists Zay has worked with">
       <div class="container">
-        <div style="max-width: 760px; margin: 0 auto; text-align: center;">
+        <figure class="artist-collage fade-in">
           <span class="eyebrow" style="color: var(--c-accent-pink); display: block; margin-bottom: 0.75rem;">Artists I've Worked With</span>
-          <h3 style="color: var(--c-text-light); font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 1.25rem;">Performed With</h3>
-          <div class="artist-credits fade-in" style="justify-content: center; gap: 0.375rem 1.25rem;">
+          <h3 style="color: var(--c-text-light); font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 1.75rem;">Performed With</h3>
+          <img class="artist-collage__img"
+            src="../assets/studio/zay-artists.jpg"
+            width="1024" height="805" loading="lazy" decoding="async"
+            alt="Zay performing alongside major recording artists including Chris Brown, Rihanna, Eminem, Justin Bieber, and Kelly Rowland" />
+          <figcaption class="artist-credits artist-collage__names">
             <span class="artist-credits__name">Chris Brown</span>
             <span class="artist-credits__name">Justin Bieber</span>
             <span class="artist-credits__name">Rihanna</span>
@@ -116,8 +120,8 @@
             <span class="artist-credits__name">Shangela</span>
             <span class="artist-credits__name">Chiddy Bang</span>
             <span class="artist-credits__name">Jane Zhang</span>
-          </div>
-        </div>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -125,7 +129,28 @@
     <section class="section section--cream" aria-label="Press and media placements">
       <div class="container">
         <span class="eyebrow text-center" style="display: block;">Press and Media</span>
-        <h2 class="section-h2 text-center fade-in" style="margin-bottom: 2.5rem;">As Seen In</h2>
+        <h2 class="section-h2 text-center fade-in" style="margin-bottom: 2rem;">As Seen In</h2>
+        <div class="video-embed-grid fade-in">
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/JOWmKhK0EVU"
+              title="Isaiah Rashaad featured on New Day Northwest"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/lTKXzno_w_o"
+              title="Isaiah Rashaad in Learning Through Movement, a dance education feature"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <p class="text-center text-muted fade-in" style="font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem;">On Television</p>
         <div class="media-strip fade-in">
           <span class="media-strip__item">New Day Northwest</span>
         </div>
@@ -160,7 +185,7 @@
             </div>
           </article>
           <article class="card fade-in">
-            <img class="card__img card__img--logo" style="background: var(--c-bg-dark); padding: 2rem;"
+            <img class="card__img card__img--logo"
               src="../assets/drive/img/logo_metallic_chrome.png"
               alt="ZB metallic chrome logo representing the Zay Merch and Products line coming soon" />
             <div class="card__body">
