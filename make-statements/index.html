@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800&display=swap" />
   <link rel="stylesheet" href="../styles.css" />
-  <!-- Smooth Fantasy @font-face removed — watermarked personal-use-only TTF (IP violation). Caveat Brush via Google Fonts handles all script accents. -->
+  <!-- Smooth Fantasy @font-face removed, watermarked personal-use-only TTF (IP violation). Caveat Brush via Google Fonts handles all script accents. -->
 </head>
 <body>
 
@@ -18,9 +18,9 @@
       <img src="../assets/drive/img/logo_transparent.png" alt="A Day With Zay" />
     </a>
     <nav class="site-header__nav" aria-label="Primary navigation">
-      <a href="../make-moves/index.html">Make Moves</a>
-      <a href="../make-memories/index.html">Make Memories</a>
-      <a href="index.html" class="active">Make Statements</a>
+      <a href="../make-moves/index.html">Dance</a>
+      <a href="../make-memories/index.html">Events</a>
+      <a href="index.html" class="active">Brand</a>
       <a href="../zays-baes/index.html">Zay's BAEs</a>
       <a href="../about.html">About</a>
       <a href="../contact.html" class="site-header__cta">Book</a>
@@ -30,9 +30,9 @@
 
   <div class="site-header__mobile-nav" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
     <button class="site-header__mobile-close" aria-label="Close navigation menu" id="mobile-close">&times;</button>
-    <a href="../make-moves/index.html">Make Moves</a>
-    <a href="../make-memories/index.html">Make Memories</a>
-    <a href="index.html" style="color: var(--c-accent-pink);">Make Statements</a>
+    <a href="../make-moves/index.html">Dance</a>
+    <a href="../make-memories/index.html">Events</a>
+    <a href="index.html" style="color: var(--c-accent-pink);">Brand</a>
     <a href="../zays-baes/index.html">Zay's BAEs</a>
     <a href="../about.html">About</a>
     <a href="../contact.html" style="color: var(--c-accent-pink);">Book</a>
@@ -53,48 +53,110 @@
       </div>
     </section>
 
-    <!-- Overview note -->
-    <section class="section section--cream" aria-label="Partner tier overview">
+    <!-- About / expertise statement (client review 2026-07-07: replaces prior "Building Partnerships" overview copy;
+         feature-block layout matches the Make Memories page's lead-expertise section) -->
+    <section class="section section--cream" aria-label="Fashion and professional collaboration background">
       <div class="container">
-        <div style="max-width: 720px; margin: 0 auto; text-align: center;">
-          <span class="eyebrow">Building Partnerships</span>
-          <h2 class="section-h2 fade-in" style="margin-bottom: 1.5rem;">The Brand Is Growing. The Partnerships Follow.</h2>
-          <p class="fade-in text-muted">
-            Brands keep DM-ing. The audience is real, the trust is real, and the audience is built for collaborations that fit. If your brand belongs here, pitch it.
-          </p>
+        <div class="feature-block fade-in">
+          <div class="feature-block__content">
+            <span class="eyebrow">Commercial and On-Camera</span>
+            <h2 class="section-h2">Fashion, Film, and Professional Collaboration</h2>
+            <p>
+              Isaiah Rashaad's work reaches beyond the studio and the stage into commercial dance and on-camera representation, with brand campaigns for names like Nike, Adidas, Chanel, and Volkswagen, and production work performing alongside artists including Chris Brown, Rihanna, Justin Bieber, and Eminem.
+            </p>
+            <p style="margin-top: 1rem;">
+              That same camera-ready presence, the energy he brings to a classroom, a stage, or a set, is what a brand partnership with Zay looks like. He brings his own audience with him: real students, real followers, and an energy proven to hold a room from open to close.
+            </p>
+          </div>
+          <img
+            class="feature-block__img"
+            src="../assets/drive/img/portrait_headshot2.jpg"
+            alt="Isaiah Rashaad portrait: commercial dance talent and on-camera brand representation"
+          />
         </div>
       </div>
     </section>
 
-    <!-- Brands I've Worked With -->
-    <section class="section" aria-label="Brands Zay has worked with">
+    <!-- Partner cards grid (moved to top per client review 2026-07-07: partnership lanes now follow the
+         hero + about statement directly, so this page follows the same top-of-page format as Make Memories) -->
+    <section class="section" aria-label="Partnership offerings">
+      <div class="container">
+        <h2 class="section-h2 text-center fade-in" style="margin-bottom: 3rem;">Partnership Lanes</h2>
+        <div class="grid-3">
+          <article class="card fade-in">
+            <img class="card__img"
+              src="../assets/instagram/saturzays.jpg"
+              alt="Jazz Funk SaturZays branded class flyer: representing Zay's BAEs brand presence" />
+            <div class="card__body">
+              <span class="badge badge--emerging">Emerging</span>
+              <h3 class="card__name">Brand Partnerships</h3>
+              <p class="card__hook">Ambassador roles, branded class series, product partnerships, and content collabs. Brands that fit Zay's audience and Zay's voice.</p>
+              <a href="brand-partnerships.html" class="btn btn--secondary btn--sm">Learn More</a>
+            </div>
+          </article>
+          <article class="card fade-in">
+            <img class="card__img"
+              src="../assets/drive/img/portrait_chicago_bw.jpg"
+              alt="Isaiah Rashaad offering Behind the Artist development coaching for performing artists" />
+            <div class="card__body">
+              <span class="badge badge--aspirational">Aspirational</span>
+              <h3 class="card__name">Behind the Artist</h3>
+              <p class="card__hook">Coaching for performing artists on stage presence, camera, and mic. Currently embedded in ZB Performance Training Co. Building as a standalone.</p>
+              <a href="behind-the-artist.html" class="btn btn--secondary btn--sm">Learn More</a>
+            </div>
+          </article>
+          <article class="card fade-in">
+            <img class="card__img card__img--logo"
+              src="../assets/drive/img/logo_metallic_chrome.png"
+              alt="ZB metallic chrome logo representing the Zay Merch and Products line coming soon" />
+            <div class="card__body">
+              <span class="badge badge--coming-soon">Coming Soon</span>
+              <h3 class="card__name">Merch</h3>
+              <p class="card__hook">Knee pads. Apparel. Zay-isms on a calendar. The full kit. Students have been asking. The drop is coming.</p>
+              <a href="merch.html" class="btn btn--secondary btn--sm">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands I've Worked With: logos-first per client review 2026-07-07. Logo files render as <img>;
+         brands without a sourced logo file stay as uniform brand-chip pills so the row reads as one
+         consistent set. Wrapped in .brand-carousel as a structural hook for the carousel build below. -->
+    <section class="section section--cream" aria-label="Brands Zay has worked with">
       <div class="container">
         <span class="eyebrow text-center" style="display: block;">Credibility</span>
         <h2 class="section-h2 text-center fade-in" style="margin-bottom: 0.5rem;">Brands I've Worked With</h2>
         <p class="text-center text-muted fade-in" style="margin-bottom: 2rem; font-size: 0.9rem;">Commercial dance talent, brand campaigns, and on-camera representation. 17 brands and counting.</p>
-        <div class="brand-chips fade-in" style="display: flex; flex-wrap: wrap; gap: 0.625rem; justify-content: center; margin-bottom: 1.25rem;">
-          <img class="brand-logo" src="../assets/logos/nike.svg" alt="Nike" loading="lazy" />
-          <img class="brand-logo" src="../assets/logos/adidas.svg" alt="Adidas" loading="lazy" />
-          <span class="brand-chip">Asics</span>
-          <span class="brand-chip">Levi's</span>
-          <img class="brand-logo" src="../assets/logos/chevrolet.svg" alt="Chevrolet" loading="lazy" />
-          <img class="brand-logo" src="../assets/logos/volkswagen.svg" alt="Volkswagen" loading="lazy" />
-          <img class="brand-logo" src="../assets/logos/porsche.svg" alt="Porsche" loading="lazy" />
-          <img class="brand-logo" src="../assets/logos/ubisoft.svg" alt="Ubisoft Just Dance" loading="lazy" />
-          <span class="brand-chip">Chanel</span>
-          <img class="brand-logo" src="../assets/logos/huawei.svg" alt="Huawei" loading="lazy" />
-          <span class="brand-chip">BECU</span>
-          <span class="brand-chip">Nature Made</span>
-          <img class="brand-logo" src="../assets/logos/skoda.svg" alt="Skoda" loading="lazy" />
-          <span class="brand-chip">Ed Hardy</span>
-          <span class="brand-chip">Regal Chivas</span>
-          <span class="brand-chip">TMall</span>
-          <span class="brand-chip">Zedot Glasses</span>
+        <!-- TODO: carousel + per-brand click-through to a work reel/PDF pending Zay's brand-work folder (video reel + PDF portfolio).
+             .brand-carousel below is a plain structural wrapper only; no carousel behavior or per-brand links exist yet. -->
+        <div class="brand-carousel fade-in">
+          <div class="brand-chips" style="display: flex; flex-wrap: wrap; gap: 0.625rem; justify-content: center; margin-bottom: 1.25rem;">
+            <img class="brand-logo" src="../assets/logos/nike.svg" alt="Nike" loading="lazy" />
+            <img class="brand-logo" src="../assets/logos/adidas.svg" alt="Adidas" loading="lazy" />
+            <img class="brand-logo" src="../assets/logos/chevrolet.svg" alt="Chevrolet" loading="lazy" />
+            <img class="brand-logo" src="../assets/logos/volkswagen.svg" alt="Volkswagen" loading="lazy" />
+            <img class="brand-logo" src="../assets/logos/porsche.svg" alt="Porsche" loading="lazy" />
+            <img class="brand-logo" src="../assets/logos/ubisoft.svg" alt="Ubisoft Just Dance" loading="lazy" />
+            <img class="brand-logo" src="../assets/logos/huawei.svg" alt="Huawei" loading="lazy" />
+            <img class="brand-logo" src="../assets/logos/skoda.svg" alt="Skoda" loading="lazy" />
+            <!-- TODO: source brand logos for Asics, Levi's, Chanel, BECU, Nature Made, Ed Hardy, Regal Chivas,
+                 TMall, and Zedot Glasses; swap these chips for logo marks once files are provided -->
+            <span class="brand-chip">Asics</span>
+            <span class="brand-chip">Levi's</span>
+            <span class="brand-chip">Chanel</span>
+            <span class="brand-chip">BECU</span>
+            <span class="brand-chip">Nature Made</span>
+            <span class="brand-chip">Ed Hardy</span>
+            <span class="brand-chip">Regal Chivas</span>
+            <span class="brand-chip">TMall</span>
+            <span class="brand-chip">Zedot Glasses</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Artists I've Worked With -->
+    <!-- Artists I've Worked With / Performed With: kept directly below Brands per client review 2026-07-07 -->
     <section class="section section--dark" aria-label="Artists Zay has worked with">
       <div class="container">
         <figure class="artist-collage fade-in">
@@ -143,7 +205,7 @@
           <div class="video-embed">
             <iframe
               src="https://www.youtube-nocookie.com/embed/lTKXzno_w_o"
-              title="Isaiah Rashaad in Learning Through Movement, a dance education feature"
+              title="Isaiah Rashaad, featured video"
               loading="lazy"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
@@ -157,50 +219,8 @@
       </div>
     </section>
 
-    <!-- Partner cards grid -->
-    <section class="section" aria-label="Partnership offerings">
-      <div class="container">
-        <h2 class="section-h2 text-center fade-in" style="margin-bottom: 3rem;">Partnership Lanes</h2>
-        <div class="grid-3">
-          <article class="card fade-in">
-            <img class="card__img"
-              src="../assets/instagram/saturzays.jpg"
-              alt="Jazz Funk SaturZays branded class flyer: representing Zay's BAEs brand presence" />
-            <div class="card__body">
-              <span class="badge badge--emerging">Emerging</span>
-              <h3 class="card__name">Brand Partnerships</h3>
-              <p class="card__hook">Ambassador roles, branded class series, product partnerships, and content collabs. Brands that fit Zay's audience and Zay's voice.</p>
-              <a href="brand-partnerships.html" class="btn btn--secondary btn--sm">Learn More</a>
-            </div>
-          </article>
-          <article class="card fade-in">
-            <img class="card__img"
-              src="../assets/drive/img/portrait_chicago_bw.jpg"
-              alt="Isaiah Rashaad offering Behind the Artist development coaching for performing artists" />
-            <div class="card__body">
-              <span class="badge badge--aspirational">Aspirational</span>
-              <h3 class="card__name">Behind the Artist</h3>
-              <p class="card__hook">Coaching for performing artists on stage presence, camera, and mic. Currently embedded in ZB Performance Training. Building as a standalone.</p>
-              <a href="behind-the-artist.html" class="btn btn--secondary btn--sm">Learn More</a>
-            </div>
-          </article>
-          <article class="card fade-in">
-            <img class="card__img card__img--logo"
-              src="../assets/drive/img/logo_metallic_chrome.png"
-              alt="ZB metallic chrome logo representing the Zay Merch and Products line coming soon" />
-            <div class="card__body">
-              <span class="badge badge--coming-soon">Coming Soon</span>
-              <h3 class="card__name">Merch</h3>
-              <p class="card__hook">Knee pads. Apparel. Zay-isms on a calendar. The full kit. Students have been asking. The drop is coming.</p>
-              <a href="merch.html" class="btn btn--secondary btn--sm">Learn More</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- Production Choreography cross-link -->
-    <section class="section section--cream" aria-label="Production choreography for brands">
+    <section class="section" aria-label="Production choreography for brands">
       <div class="container">
         <div style="max-width: 720px; margin: 0 auto; text-align: center;">
           <span class="eyebrow">Also Available</span>
@@ -239,14 +259,14 @@
         </div>
       </div>
       <nav class="site-footer__nav" aria-label="Make Moves footer links">
-        <h4>Make Moves</h4>
+        <h4>Dance</h4>
         <a href="../make-moves/back-to-baesics.html">Back to BAEsics</a>
         <a href="../make-moves/zb-performance-training.html">ZB Performance Training Co.</a>
         <a href="../make-moves/zb-classes.html">ZB Classes</a>
         <a href="../make-moves/workshops.html">Workshops</a>
       </nav>
       <nav class="site-footer__nav" aria-label="Make Memories footer links">
-        <h4>Make Memories</h4>
+        <h4>Events</h4>
         <a href="../make-memories/brides-baes.html">Brides BAEs</a>
         <a href="../make-memories/corporate-events.html">Corporate Events</a>
         <a href="../make-memories/hosting.html">Hosting</a>

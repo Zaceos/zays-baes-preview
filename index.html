@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A Day With Zay. Seattle choreographer Isaiah Rashaad. Make Moves, Make Memories, Make Statements, or Become a BAE. Confidence-first dance, the heels series that fills quickly, events, and more." />
+  <meta name="description" content="A Day With Zay. Seattle choreographer Isaiah Rashaad. Dance training, events, and brand partnerships. The Back to BAEsics heels series that fills quickly, classes, and more." />
   <title>A Day With Zay | Seattle Choreographer, Entertainer, Creative</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@400;500;600;700;800&display=swap" />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Smooth Fantasy @font-face removed — watermarked personal-use-only TTF (IP violation). Caveat Brush via Google Fonts handles all script accents. -->
+  <!-- Smooth Fantasy @font-face removed, watermarked personal-use-only TTF (IP violation). Caveat Brush via Google Fonts handles all script accents. -->
 </head>
 <body>
 
@@ -21,9 +21,9 @@
       <img src="assets/drive/img/logo_transparent.png" alt="A Day With Zay" />
     </a>
     <nav class="site-header__nav" aria-label="Primary navigation">
-      <a href="make-moves/index.html">Make Moves</a>
-      <a href="make-memories/index.html">Make Memories</a>
-      <a href="make-statements/index.html">Make Statements</a>
+      <a href="make-moves/index.html">Dance</a>
+      <a href="make-memories/index.html">Events</a>
+      <a href="make-statements/index.html">Brand</a>
       <a href="zays-baes/index.html">Zay's BAEs</a>
       <a href="about.html">About</a>
       <a href="contact.html" class="site-header__cta">Book</a>
@@ -34,9 +34,9 @@
   <!-- Mobile nav overlay -->
   <div class="site-header__mobile-nav" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
     <button class="site-header__mobile-close" aria-label="Close navigation menu" id="mobile-close">&times;</button>
-    <a href="make-moves/index.html">Make Moves</a>
-    <a href="make-memories/index.html">Make Memories</a>
-    <a href="make-statements/index.html">Make Statements</a>
+    <a href="make-moves/index.html">Dance</a>
+    <a href="make-memories/index.html">Events</a>
+    <a href="make-statements/index.html">Brand</a>
     <a href="zays-baes/index.html">Zay's BAEs</a>
     <a href="about.html">About</a>
     <a href="contact.html" style="color: var(--c-accent-pink);">Book</a>
@@ -54,25 +54,25 @@
       <div class="hero__content">
         <span class="hero-eyebrow-script">Hey Hey There, Bae</span>
         <h1 class="hero-h1">How Would You Like<br>To Spend A Day With Zay?</h1>
-        <p class="hero__subhead">More than just dance. Bringing out your inner dancer with confidence.</p>
+        <p class="hero__subhead">Dance training, events, and brand collaborations, all led by Seattle choreographer Isaiah Rashaad.</p>
 
         <p class="hero__subhead" style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin: 2rem 0 1rem; font-style: normal;">Choose Your Experience</p>
         <div class="hero__doorways hero__doorways--4col">
           <a href="make-moves/index.html" class="doorway-card">
-            <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Dance With Zay</span>
-            <h3 class="gradient-text">Make Moves</h3>
+            <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Make Moves</span>
+            <h3 class="gradient-text">Dance</h3>
             <p>Beginner heels series, performance training, drop-in classes, and more.</p>
             <span class="btn btn--ghost btn--sm">Open the door &rarr;</span>
           </a>
           <a href="make-memories/index.html" class="doorway-card">
-            <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Book Zay</span>
-            <h3 class="gradient-text">Make Memories</h3>
+            <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Make Memories</span>
+            <h3 class="gradient-text">Events</h3>
             <p>Host your event, bachelorette, or corporate offsite with energy that fills the space.</p>
             <span class="btn btn--ghost btn--sm">Open the door &rarr;</span>
           </a>
           <a href="make-statements/index.html" class="doorway-card">
-            <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Partner With Zay</span>
-            <h3 class="gradient-text">Make Statements</h3>
+            <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Make Statements</span>
+            <h3 class="gradient-text">Brand</h3>
             <p>Brand collaborations, content, and partnerships that fit Zay's audience.</p>
             <span class="btn btn--ghost btn--sm">Open the door &rarr;</span>
           </a>
@@ -136,8 +136,16 @@
         <span class="eyebrow text-center" style="display: block;">What's Running</span>
         <h2 class="section-h2 text-center fade-in">Train, Drop In, or Book Zay</h2>
         <p class="calendar-section__subhead text-center fade-in">
-          Sample upcoming events. Real schedule lands as Zay confirms dates.
+          Sample upcoming events. Filter by type to see what's coming. Real schedule lands as Zay confirms dates.
         </p>
+
+        <div class="calendar-filter fade-in" role="group" aria-label="Filter events by type">
+          <button type="button" class="calendar-filter__chip is-active" data-filter="all">All</button>
+          <button type="button" class="calendar-filter__chip" data-filter="series"><span class="dot dot--series"></span>Series</button>
+          <button type="button" class="calendar-filter__chip" data-filter="dropin"><span class="dot dot--dropin"></span>Drop-In</button>
+          <button type="button" class="calendar-filter__chip" data-filter="workshop"><span class="dot dot--workshop"></span>Workshop</button>
+          <button type="button" class="calendar-filter__chip" data-filter="byappt"><span class="dot dot--byappt"></span>By Appt</button>
+        </div>
 
         <div class="calendar-grid fade-in">
 
@@ -151,12 +159,12 @@
             <div class="event-card__body">
               <span class="badge event-badge event-badge--series">Series</span>
               <h3 class="event-card__name">Back to BAEsics Pt. I: Spring Cohort</h3>
-              <p class="event-card__meta">Bila, Seattle &nbsp;|&nbsp; Saturdays 2:00 – 4:00 PM</p>
+              <p class="event-card__meta">Bila, Seattle &nbsp;|&nbsp; Saturdays 2:00 to 4:00 PM</p>
               <details class="event-card__details">
                 <summary>View Details</summary>
                 <div class="event-card__details-body">
                   <p>Six-week beginner heels series. Three weeks no heels (foundation, walks, confidence). Three weeks in heels (bringing it together). Cohorts fill quickly. Limited spots per cohort.</p>
-                  <p class="event-card__for"><strong>For:</strong> New to heels, or wanting to build confidence before technique.</p>
+                  <p class="event-card__for"><strong>For:</strong> New to heels, or wanting to build real confidence alongside real technique.</p>
                   <a href="#" class="btn btn--primary btn--sm event-card__register-btn" aria-label="Reserve your spot in Back to BAEsics Pt. I">
                     Reserve Your Spot
                     <!-- TODO: wire to real booking platform -->
@@ -201,7 +209,7 @@
             <div class="event-card__body">
               <span class="badge event-badge event-badge--series">Series</span>
               <h3 class="event-card__name">Back to BAEsics Pt. II</h3>
-              <p class="event-card__meta">Bila, Seattle &nbsp;|&nbsp; Saturdays 2:00 – 4:00 PM</p>
+              <p class="event-card__meta">Bila, Seattle &nbsp;|&nbsp; Saturdays 2:00 to 4:00 PM</p>
               <details class="event-card__details">
                 <summary>View Details</summary>
                 <div class="event-card__details-body">
@@ -230,7 +238,7 @@
               <details class="event-card__details">
                 <summary>View Details</summary>
                 <div class="event-card__details-body">
-                  <p>Same Back to BAEsics curriculum, brought to Tacoma directly by Zay. Confidence-first, cohort-based, same results as Seattle.</p>
+                  <p>Same Back to BAEsics curriculum, brought to Tacoma directly by Zay. Cohort-based, confidence-building, same results as Seattle.</p>
                   <p class="event-card__for"><strong>For:</strong> South Sound students.</p>
                   <a href="#" class="btn btn--primary btn--sm event-card__register-btn" aria-label="Get notified when the Tacoma run launches">
                     Get Notified
@@ -316,10 +324,10 @@
             <span class="eyebrow">Meet Zay</span>
             <h2 class="section-h2">Isaiah Rashaad</h2>
             <p>
-              Zay is a choreographer who teaches confidence before technique. His students walk in shy and walk out doing things they swore they couldn't do.
+              Zay is a Seattle choreographer who builds two things at the same time: a room where real confidence can grow, and technique taught with real rigor. Neither one runs ahead of the other.
             </p>
             <p style="margin-top: 1rem;">
-              The promise is not perfection. It is transformation, and the kind of fun that makes people want to show up week after week.
+              His students walk in shy and walk out doing things they swore they couldn't do. The promise is not perfection. It is transformation, and the kind of fun that makes people want to show up week after week.
             </p>
             <a href="about.html" class="btn btn--secondary" style="margin-top: 1.5rem; align-self: flex-start;">Read His Story</a>
           </div>
@@ -335,22 +343,22 @@
     </section>
 
     <!-- ============================================================
-         SECTION 3b: The Method (confidence-first approach)
+         SECTION 3b: The Method (parallel pillars: the room + the technique)
          ============================================================ -->
     <section class="section section--dark-gradient" aria-label="The ZB method">
       <div class="container">
         <div class="feature-block" style="margin-bottom: 4rem;">
           <div class="feature-block__content fade-in">
             <span class="eyebrow" style="color: var(--c-accent-pink);">The Method</span>
-            <h2 class="section-h2" style="color: var(--c-text-light);">Confidence First. Always.</h2>
+            <h2 class="section-h2" style="color: var(--c-text-light);">Rigorous and Warm.</h2>
             <p style="color: var(--c-text-muted-dark);">
-              Most heels programs lead with drilling. Zay leads with confidence. As he tells every room, "about 90 percent of heels is your confidence." The technique is real, but it is built on top of how you carry yourself, never the other way around.
+              Every ZB class is building two things at the same time. One is a room where real confidence can grow. The other is technique, taught with real rigor. Neither one runs ahead of the other, and you need both to move like you mean it.
             </p>
             <p style="color: var(--c-text-muted-dark); margin-top: 1rem;">
-              So the work starts with the foundation and builds up. The bevel as your home base. The line from hip to toe. Conditioning so you are steady. Then walks, floorwork, and turns, each one layered on the last. Nothing is rushed, and nothing is faked. "It is not about how far you can go," he says. "It is about the technique of how you get there."
+              One pillar is the room itself: safe, no shame, full of permission to try. Zay names the fear out loud so nobody has to carry it alone, and level is set by what a dancer can demonstrate, not by how long they've been showing up. It is how someone can stand shy in the corner on day one and be rolling on the floor, hair flipping, by day six.
             </p>
             <p style="color: var(--c-text-muted-dark); margin-top: 1rem;">
-              The result is dancers who do not just learn steps. They learn to move like they mean it, and to find the fun in the foundation.
+              The other pillar is technique, built in a deliberate order. The foundation and the bevel as home base. Conditioning so you are steady, not wobbling. Texture from day one, then walks, then floorwork once you've earned it, and a small first combo to bring it together. Nothing rushed, nothing faked, and always the fun found right there in the foundation.
             </p>
           </div>
           <div class="fade-in">
@@ -384,7 +392,7 @@
           <div class="method-step">
             <span class="method-step__num">4</span>
             <h4 class="method-step__name">Expression</h4>
-            <p class="method-step__desc">Confidence, texture, and intention. The feel that makes it yours.</p>
+            <p class="method-step__desc">Texture, intention, and presence. The feel that makes it yours.</p>
           </div>
           <div class="method-step">
             <span class="method-step__num">5</span>
@@ -398,7 +406,7 @@
     <!-- ============================================================
          SECTION 4: Testimonials (replaces Featured Programs)
          ============================================================ -->
-    <!-- TESTIMONIALS PLACEHOLDER - Zay to provide 3-5 student/client testimonials -->
+    <!-- Testimonials: verified real first-name set, source Zay-Drive/VERIFIED-TESTIMONIALS.md (2026-06-15). Confirm named-consent with Zay before a FULLY-PUBLIC launch; preview use is fine. -->
     <section class="section section--cream" aria-label="Student and client testimonials">
       <div class="container">
         <span class="eyebrow text-center" style="text-align: center; display: block;">What They Say</span>
@@ -496,20 +504,20 @@
         </div>
       </div>
       <nav class="site-footer__nav" aria-label="Make Moves footer links">
-        <h4>Make Moves</h4>
+        <h4>Dance</h4>
         <a href="make-moves/back-to-baesics.html">Back to BAEsics</a>
         <a href="make-moves/zb-performance-training.html">ZB Performance Training Co.</a>
         <a href="make-moves/zb-classes.html">ZB Classes</a>
         <a href="make-moves/workshops.html">Workshops</a>
       </nav>
       <nav class="site-footer__nav" aria-label="Make Memories footer links">
-        <h4>Make Memories</h4>
+        <h4>Events</h4>
         <a href="make-memories/brides-baes.html">Brides BAEs</a>
         <a href="make-memories/corporate-events.html">Corporate Events</a>
         <a href="make-memories/hosting.html">Hosting</a>
       </nav>
       <nav class="site-footer__nav" aria-label="Make Statements footer links">
-        <h4>Make Statements</h4>
+        <h4>Brand</h4>
         <a href="make-statements/brand-partnerships.html">Brand Partnerships</a>
         <a href="make-statements/merch.html">Merch and Apparel</a>
       </nav>
@@ -568,6 +576,36 @@
     }, { threshold: 0.12 });
 
     faders.forEach(function (el) { observer.observe(el); });
+
+    // Calendar type filter + legend (2026-07-08 call: filter to see what's coming by type)
+    (function () {
+      var section = document.getElementById('calendar');
+      if (!section) return;
+      var cards = section.querySelectorAll('.event-card');
+      cards.forEach(function (card) {
+        var badge = card.querySelector('.event-badge');
+        var type = 'other';
+        if (badge) {
+          if (badge.classList.contains('event-badge--series')) type = 'series';
+          else if (badge.classList.contains('event-badge--dropin')) type = 'dropin';
+          else if (badge.classList.contains('event-badge--workshop')) type = 'workshop';
+          else if (badge.classList.contains('event-badge--byappt')) type = 'byappt';
+        }
+        card.setAttribute('data-type', type);
+      });
+      var chips = section.querySelectorAll('.calendar-filter__chip');
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          var f = chip.getAttribute('data-filter');
+          chips.forEach(function (c) { c.classList.remove('is-active'); });
+          chip.classList.add('is-active');
+          cards.forEach(function (card) {
+            var show = (f === 'all') || (card.getAttribute('data-type') === f);
+            card.classList.toggle('is-hidden', !show);
+          });
+        });
+      });
+    })();
   </script>
 
 </body>

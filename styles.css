@@ -2436,3 +2436,45 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   Calendar: toned-down coloring + type filter/legend
+   (2026-07-08 client call: "less heavy color-coding; add a filter
+   on the side so people can see what's coming up by type")
+   ============================================================ */
+/* Neutralize the heavy pink/purple date blocks to charcoal for every card.
+   Type is now signalled subtly: a thin colored top accent + the badge pill. */
+.event-card__date,
+.event-card__date.domain-color--make-moves,
+.event-card__date.domain-color--make-memories,
+.event-card__date.domain-color--make-statements,
+.event-card__date.domain-color--zays-baes {
+  background: #2c2c2c;
+  color: #ffffff;
+}
+.calendar-grid .event-card { border-top: 3px solid rgba(0, 0, 0, 0.10); }
+.calendar-grid .event-card[data-type="series"]   { border-top-color: var(--c-accent-purple); }
+.calendar-grid .event-card[data-type="dropin"]    { border-top-color: #16a34a; }
+.calendar-grid .event-card[data-type="workshop"]  { border-top-color: var(--c-accent-pink); }
+.calendar-grid .event-card[data-type="byappt"]    { border-top-color: #d97706; }
+.event-card.is-hidden { display: none; }
+
+/* Filter + legend bar */
+.calendar-filter {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;
+  margin: 0 auto 2.5rem; max-width: 760px;
+}
+.calendar-filter__chip {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.4rem 0.95rem; border-radius: 50px; cursor: pointer;
+  background: rgba(0, 0, 0, 0.05); color: var(--c-text-muted);
+  border: 1px solid rgba(0, 0, 0, 0.08); transition: all var(--transition);
+}
+.calendar-filter__chip:hover { background: rgba(0, 0, 0, 0.09); }
+.calendar-filter__chip.is-active { background: var(--c-text-dark); color: #ffffff; border-color: var(--c-text-dark); }
+.calendar-filter__chip .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.calendar-filter__chip .dot--series { background: var(--c-accent-purple); }
+.calendar-filter__chip .dot--dropin { background: #16a34a; }
+.calendar-filter__chip .dot--workshop { background: var(--c-accent-pink); }
+.calendar-filter__chip .dot--byappt { background: #d97706; }
