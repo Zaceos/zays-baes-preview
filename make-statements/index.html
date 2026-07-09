@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Partner with Zay. Brand collaborations, content partnerships, artist development, and merch. Where the audience is, Zay shows up." />
+  <meta name="description" content="Partner with Zay. Brand collaborations, content partnerships, professional collaboration, and merch. Where the audience is, Zay shows up." />
   <title>Partner with Zay | Brand Collaborations and Partnerships | A Day With Zay</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,12 +97,12 @@
           <article class="card fade-in">
             <img class="card__img"
               src="../assets/drive/img/portrait_chicago_bw.jpg"
-              alt="Isaiah Rashaad offering Behind the Artist development coaching for performing artists" />
+              alt="Isaiah Rashaad performing, available for professional collaboration with artists and productions" />
             <div class="card__body">
-              <span class="badge badge--aspirational">Aspirational</span>
-              <h3 class="card__name">Behind the Artist</h3>
-              <p class="card__hook">Coaching for performing artists on stage presence, camera, and mic. Currently embedded in ZB Performance Training Co. Building as a standalone.</p>
-              <a href="behind-the-artist.html" class="btn btn--secondary btn--sm">Learn More</a>
+              <span class="badge badge--live">Live</span>
+              <h3 class="card__name">Professional Collaboration</h3>
+              <p class="card__hook">Zay as a performer, not a teacher. Book him to perform at your event or collaborate on a project, alongside musicians, recording artists, or other dancers.</p>
+              <a href="../contact.html" class="btn btn--secondary btn--sm">Inquire</a>
             </div>
           </article>
           <article class="card fade-in">
@@ -120,48 +120,60 @@
       </div>
     </section>
 
-    <!-- Brands I've Worked With: logos-first per client review 2026-07-07. Logo files render as <img>;
-         brands without a sourced logo file stay as uniform brand-chip pills so the row reads as one
-         consistent set. Wrapped in .brand-carousel as a structural hook for the carousel build below. -->
+    <!-- Brands I've Worked With: rotating logo carousel (2026-07-08). 13 brands render as <img> logos;
+         4 with no sourceable logo (Nature Made, Ed Hardy, Regal Chivas, Zedot Glasses) render as
+         consistent .logo-carousel__word wordmarks, flagged to Zay to supply those logo files. -->
     <section class="section section--cream" aria-label="Brands Zay has worked with">
       <div class="container">
         <span class="eyebrow text-center" style="display: block;">Credibility</span>
         <h2 class="section-h2 text-center fade-in" style="margin-bottom: 0.5rem;">Brands I've Worked With</h2>
         <p class="text-center text-muted fade-in" style="margin-bottom: 2rem; font-size: 0.9rem;">Commercial dance talent, brand campaigns, and on-camera representation. 17 brands and counting.</p>
-        <!-- TODO: carousel + per-brand click-through to a work reel/PDF pending Zay's brand-work folder (video reel + PDF portfolio).
-             .brand-carousel below is a plain structural wrapper only; no carousel behavior or per-brand links exist yet. -->
-        <div class="brand-carousel fade-in">
-          <div class="brand-chips" style="display: flex; flex-wrap: wrap; gap: 0.625rem; justify-content: center; margin-bottom: 1.25rem;">
-            <img class="brand-logo" src="../assets/logos/nike.svg" alt="Nike" loading="lazy" />
-            <img class="brand-logo" src="../assets/logos/adidas.svg" alt="Adidas" loading="lazy" />
-            <img class="brand-logo" src="../assets/logos/chevrolet.svg" alt="Chevrolet" loading="lazy" />
-            <img class="brand-logo" src="../assets/logos/volkswagen.svg" alt="Volkswagen" loading="lazy" />
-            <img class="brand-logo" src="../assets/logos/porsche.svg" alt="Porsche" loading="lazy" />
-            <img class="brand-logo" src="../assets/logos/ubisoft.svg" alt="Ubisoft Just Dance" loading="lazy" />
-            <img class="brand-logo" src="../assets/logos/huawei.svg" alt="Huawei" loading="lazy" />
-            <img class="brand-logo" src="../assets/logos/skoda.svg" alt="Skoda" loading="lazy" />
-            <!-- TODO: source brand logos for Asics, Levi's, Chanel, BECU, Nature Made, Ed Hardy, Regal Chivas,
-                 TMall, and Zedot Glasses; swap these chips for logo marks once files are provided -->
-            <span class="brand-chip">Asics</span>
-            <span class="brand-chip">Levi's</span>
-            <span class="brand-chip">Chanel</span>
-            <span class="brand-chip">BECU</span>
-            <span class="brand-chip">Nature Made</span>
-            <span class="brand-chip">Ed Hardy</span>
-            <span class="brand-chip">Regal Chivas</span>
-            <span class="brand-chip">TMall</span>
-            <span class="brand-chip">Zedot Glasses</span>
+        <div class="logo-carousel" aria-label="Brands Zay has worked with">
+          <div class="logo-carousel__track">
+            <img class="logo-carousel__logo" src="../assets/logos/nike.svg" alt="Nike" />
+            <img class="logo-carousel__logo" src="../assets/logos/adidas.svg" alt="Adidas" />
+            <img class="logo-carousel__logo" src="../assets/logos/asics.svg" alt="Asics" />
+            <img class="logo-carousel__logo" src="../assets/logos/levis.svg" alt="Levi's" />
+            <img class="logo-carousel__logo" src="../assets/logos/chevrolet.svg" alt="Chevrolet" />
+            <img class="logo-carousel__logo" src="../assets/logos/volkswagen.svg" alt="Volkswagen" />
+            <img class="logo-carousel__logo" src="../assets/logos/porsche.svg" alt="Porsche" />
+            <img class="logo-carousel__logo" src="../assets/logos/ubisoft.svg" alt="Ubisoft Just Dance" />
+            <img class="logo-carousel__logo" src="../assets/logos/chanel.svg" alt="Chanel" />
+            <span class="logo-carousel__word">Nature Made</span>
+            <img class="logo-carousel__logo" src="../assets/logos/huawei.svg" alt="Huawei" />
+            <img class="logo-carousel__logo" src="../assets/logos/becu.svg" alt="BECU" />
+            <span class="logo-carousel__word">Ed Hardy</span>
+            <img class="logo-carousel__logo" src="../assets/logos/skoda.svg" alt="Skoda" />
+            <img class="logo-carousel__logo" src="../assets/logos/tmall.svg" alt="TMall" />
+            <span class="logo-carousel__word">Regal Chivas</span>
+            <span class="logo-carousel__word">Zedot Glasses</span>
+            <img class="logo-carousel__logo" src="../assets/logos/nike.svg" alt="Nike" />
+            <img class="logo-carousel__logo" src="../assets/logos/adidas.svg" alt="Adidas" />
+            <img class="logo-carousel__logo" src="../assets/logos/asics.svg" alt="Asics" />
+            <img class="logo-carousel__logo" src="../assets/logos/levis.svg" alt="Levi's" />
+            <img class="logo-carousel__logo" src="../assets/logos/chevrolet.svg" alt="Chevrolet" />
+            <img class="logo-carousel__logo" src="../assets/logos/volkswagen.svg" alt="Volkswagen" />
+            <img class="logo-carousel__logo" src="../assets/logos/porsche.svg" alt="Porsche" />
+            <img class="logo-carousel__logo" src="../assets/logos/ubisoft.svg" alt="Ubisoft Just Dance" />
+            <img class="logo-carousel__logo" src="../assets/logos/chanel.svg" alt="Chanel" />
+            <span class="logo-carousel__word">Nature Made</span>
+            <img class="logo-carousel__logo" src="../assets/logos/huawei.svg" alt="Huawei" />
+            <img class="logo-carousel__logo" src="../assets/logos/becu.svg" alt="BECU" />
+            <span class="logo-carousel__word">Ed Hardy</span>
+            <img class="logo-carousel__logo" src="../assets/logos/skoda.svg" alt="Skoda" />
+            <img class="logo-carousel__logo" src="../assets/logos/tmall.svg" alt="TMall" />
+            <span class="logo-carousel__word">Regal Chivas</span>
+            <span class="logo-carousel__word">Zedot Glasses</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Artists I've Worked With / Performed With: kept directly below Brands per client review 2026-07-07 -->
-    <section class="section section--dark" aria-label="Artists Zay has worked with">
+    <section class="section section--dark" aria-label="Artists Zay has performed with">
       <div class="container">
         <figure class="artist-collage fade-in">
-          <span class="eyebrow" style="color: var(--c-accent-pink); display: block; margin-bottom: 0.75rem;">Artists I've Worked With</span>
-          <h3 style="color: var(--c-text-light); font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 1.75rem;">Performed With</h3>
+          <h3 style="color: var(--c-text-light); font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 1.75rem;">Artists I've Performed With</h3>
           <img class="artist-collage__img"
             src="../assets/studio/zay-artists.jpg"
             width="1024" height="805" loading="lazy" decoding="async"
